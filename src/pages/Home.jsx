@@ -6,7 +6,8 @@ import HerpPage from '../component/HerpPage'
 import Meesho from '../component/Meesho'
 import Meesho2 from '../component/Meesho2'
 import SaleBanner from '../component/SaleBanner'
-
+import OriginalBrands from '../component/OriginalBrands'
+import Card3 from '../component/card3'
 const Home = () => {
   return (
     <div className='flex flex-col items-center justify-center h-screen bg-blue-300 h-full w-full'>
@@ -17,6 +18,8 @@ const Home = () => {
         <SaleBanner/>
       <Meesho/>
       {/* <Meesho2 /> */}
+      <OriginalBrands/>
+      <Card3/>
     
 
     </div>
