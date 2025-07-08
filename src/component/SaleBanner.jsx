@@ -2,43 +2,31 @@ import React from "react";
 
 const SaleBanner = () => {
   return (
-    <div className="flex flex-col md:flex-row justify-between items-center bg-gradient-to-r from-orange-300 via-pink-200 to-purple-400 p-6 md:p-12 text-white">
-
-      {/* LEFT SECTION */}
-      <div className="text-center md:text-left space-y-4 max-w-md">
-        <div className="bg-white p-4 rounded-xl shadow-lg inline-block mx-auto md:mx-0">
-          <div className="bg-purple-700 text-white text-xs font-bold py-1 px-3 rounded-t-md mb-2">
-            meesho
-          </div>
-          <div className="text-black space-y-1">
-            <h2 className="text-base md:text-xl font-bold">FIRST SUNDAY</h2>
-            <h1 className="text-lg md:text-3xl font-extrabold">MAHA SALE</h1>
-            <div className="bg-purple-600 text-white rounded-full mt-4 py-1 px-3 text-xs md:text-sm font-semibold inline-block">
-              6<sup>th</sup> JULY
-            </div>
+    <div className="relative w-full min-h-[250px] md:min-h-[350px] flex items-center justify-center overflow-hidden">
+      {/* Background Image */}
+      <img
+        src="https://images.meesho.com/images/marketing/1751439021433.webp"
+        alt="Sale Banner"
+        className="absolute inset-0 w-full h-full object-cover z-0"
+        style={{ minHeight: '250px', maxHeight: '534px' }}
+        loading="eager"
+        fetchpriority="high"
+        decoding="async"
+      />
+      {/* Content (centered, responsive) */}
+      <div className="relative z-20 w-full flex flex-col md:flex-row items-center justify-between px-4 md:px-16 py-8">
+        {/* Left: Offer Only (no Sale Card) */}
+        <div className="flex flex-col items-center md:items-start gap-4 w-full md:w-1/2">
+          <div className="mt-2 flex flex-col items-center md:items-start">
           </div>
         </div>
-
-        <div className="text-3xl md:text-5xl font-extrabold text-pink-900 mt-4">
-          <span className="text-white text-base md:text-lg mr-1">UP TO</span>
-          70%
-          <span className="text-white text-base md:text-lg ml-1">OFF</span>
+        {/* Right: Info & CTA */}
+        <div className="flex flex-col items-center md:items-end w-full md:w-1/2 mt-8 md:mt-0 gap-3">
+          <h2 className="text-2xl md:text-3xl font-semibold text-white drop-shadow">Smart Shopping</h2>
+          <p className="text-lg md:text-xl text-white font-medium drop-shadow">Trusted by Millions</p>
+          <button className="mt-3 bg-white text-purple-800 px-8 py-2 rounded-lg hover:bg-gray-200 font-bold shadow transition">Shop Now</button>
         </div>
       </div>
-
-      {/* RIGHT SECTION */}
-      <div className="text-center md:text-right mt-8 md:mt-0 space-y-2 max-w-xs">
-        <h2 className="text-lg md:text-2xl font-semibold text-white">
-          Smart Shopping
-        </h2>
-        <h3 className="text-base md:text-xl font-medium text-white">
-          Trusted by Millions
-        </h3>
-        <button className="bg-white text-purple-800 font-semibold px-5 py-2 rounded-md hover:bg-gray-200 transition">
-          Shop Now
-        </button>
-      </div>
-
     </div>
   );
 };
