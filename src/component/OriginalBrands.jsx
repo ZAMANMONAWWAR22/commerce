@@ -26,7 +26,7 @@ const OriginalBrands = () => {
   };
 
   return (
-    <div className="relative p-1 bg-white w-[90%] rounded-md ">
+    <div className="relative p-1  w-[99%] rounded-md hidden bg-amber-600 xl:block ">
       <div className="flex justify-between items-center mb-5  mt-5">
         <h2 className="text-lg font-semibold">Original Brands ✔ </h2>
         <a href="#" className="hidden md:flex items-center gap-1 text-purple-600 text-sm ">
@@ -48,7 +48,7 @@ const OriginalBrands = () => {
       {/* Slides */}
       <div className="flex gap-3 justify-center items-center mt-1 mb-1">
         {items.slice(startIdx, endIdx).map((item, i) => (
-          <div key={startIdx + i} className="min-w-[50px]  p-1 ">
+          <div key={startIdx + i} className="min-w-[90px]  p-1 ">
             <img src={item.image} className="w-80 h-80 object-contain" alt={`Brand ${startIdx + i + 1}`} />
 
           </div>
