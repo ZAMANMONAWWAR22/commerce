@@ -2,23 +2,42 @@
 import React from 'react';
 
 const categories = [
-  { name: 'Ethnic Wear', image: 'https://st1.bollywoodlife.com/wp-content/uploads/2024/06/Ethnic-Wear-for-Women.jpg?impolicy=Medium_Widthonly&w=412&h=290' }, // Replace with actual image paths
-  { name: 'Western Dresses', image: 'https://wholetex.sgp1.cdn.digitaloceanspaces.com/full/cotton-one-side-pocket-western-wear-dress-263.jpg' },
-  { name: 'Men\'s Wear', image: 'https://www.apetogentleman.com/wp-content/uploads/2019/05/casual-dressing-tips1.jpg' },
-  { name: 'Footwear', image: 'https://static.nike.com/a/images/t_PDP_1280_v1/f_auto,q_auto:eco/99486859-0ff3-46b4-949b-2d16af2ad421/custom-nike-dunk-high-by-you-shoes.png' },
-  { name: 'Home Decor', image: 'https://5.imimg.com/data5/SELLER/Default/2023/1/YZ/US/JC/81519322/home-decor-service.jpg' },
-  { name: 'Beauty', image: 'https://media.licdn.com/dms/image/v2/D4E12AQEnTrDYLCBAlA/article-cover_image-shrink_720_1280/article-cover_image-shrink_720_1280/0/1690298374715?e=2147483647&v=beta&t=MhT_71rse5rmyKd98YNDhsF_XsG2YNLqbodLjO84fn0' },
-  { name: 'Accessories', image: 'https://maisoli.in/cdn/shop/files/2_2775676b-7c9f-437d-a2c8-ff1a4d546827.jpg?v=1742798439&width=1445' },
-  { name: 'Grocery', image: 'https://hips.hearstapps.com/hmg-prod/images/6517a7bd-0057-43c0-961e-1f14d5a6eaaf-1657946161.jpeg?crop=0.8786741713570981xw:1xh;center,top&resize=1200:*' },
+  { name: 'Ethnic Wear', image: 'https://images.meesho.com/images/marketing/1744634654837.webp' }, // Replace with actual image paths
+  { name: 'Western Dresses', image: 'https://images.meesho.com/images/marketing/1744634725496.webp' },
+  { name: 'Men\'s Wear', image: 'https://images.meesho.com/images/marketing/1744634780426.webp' },
+  { name: 'Footwear', image: 'https://images.meesho.com/images/marketing/1744634814643.webp' },
+  { name: 'Home Decor', image: 'https://images.meesho.com/images/marketing/1744634835018.webp' },
+  { name: 'Beauty', image: 'https://images.meesho.com/images/marketing/1744634871107.webp' },
+  { name: 'Accessories', image: 'https://images.meesho.com/images/marketing/1744634909968.webp' },
+  { name: 'Grocery', image: 'https://images.meesho.com/images/marketing/1744634937295.webp' },
 ];
 
 const CategoryNavigation = () => {
   return (
-    <div className="flex justify-center items-center py-8 bg-white shadow-md rounded-lg mx-auto max-w-7xl">
+    <div className=" flex flex-col justify-center items-center w-screen h-screen py-8 bg-white shadow-md rounded-lg" >
+      
+        <div className=" flex gap-4 items-center w-[90%] bg-pink-100 justify-center rounded-l" >
+          <div className="styles__FeatureItem-sc-2pt7ax-5 kwIMZc flex items-center gap-2">
+            <img src="https://www.meesho.com/assets/Icons/returns.svg" className="styles__FeatureIcon-sc-2pt7ax-6 kzhBoo" />
+            <span className="styles__FeatureText-sc-2pt7ax-7 bXOsoB">7 Days Easy Return</span>
+          </div>
+         <div class="w-px h-6 bg-gray-300"></div>
+          <div className="styles__FeatureItem-sc-2pt7ax-5 kwIMZc flex items-center gap-2">
+            <img src="https://www.meesho.com/assets/Icons/cod.svg" className="styles__FeatureIcon-sc-2pt7ax-6 kzhBoo" />
+            <span className="styles__FeatureText-sc-2pt7ax-7 bXOsoB">Cash on Delivery</span>
+          </div>
+          <div class="w-px h-6 bg-gray-300"></div>
+          <div className="styles__FeatureItem-sc-2pt7ax-5 kwIMZc flex items-center gap-2">
+            <img src="https://www.meesho.com/assets/Icons/lowest-price.svg" className="styles__FeatureIcon-sc-2pt7ax-6 kzhBoo" />
+            <span className="styles__FeatureText-sc-2pt7ax-7 bXOsoB">Lowest Prices</span>
+          </div>
+
+        </div>
+     
       <div className="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-8 gap-6 lg:gap-8">
         {categories.map((category) => (
-          <div key={category.name} className="flex flex-col items-center cursor-pointer hover:scale-106 transition-transform duration-200">
-            <div className="w-24 h-24 rounded-full overflow-hidden flex items-center justify-center bg-gray-100 mb-2 shadow-sm">
+          <div key={category.name} className="flex flex-col items-center cursor-pointer hover:-translate-y-1 transition-transform duration-200">
+            <div className="w-[150px] h-[150px] rounded-full  flex items-center justify-center mb-2 shadow-sm">
               {/* Replace with your actual image paths */}
               <img
                 src={category.image}

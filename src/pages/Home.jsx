@@ -7,6 +7,7 @@ import Meesho from '../component/Meesho'
 import Meesho2 from '../component/Meesho2'
 import SaleBanner from '../component/SaleBanner'
 import OriginalBrands from '../component/OriginalBrands'
+import OriginalBrands2 from '../component/OriginalBrands2'
 import Card3 from '../component/card3'
 const Home = () => {
   return (
@@ -19,7 +20,8 @@ const Home = () => {
       <Meesho/>
       {/* <Meesho2 /> */}
       <OriginalBrands/>
-      <Card3/>
+      <OriginalBrands2/>
+      {/* <Card3/> */}
     
 
     </div>
