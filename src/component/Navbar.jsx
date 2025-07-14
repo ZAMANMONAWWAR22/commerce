@@ -23,7 +23,7 @@ const Navbar = () => {
         />
       </div> */}
 
-      <div className="flex gap-4 items-center font-semibold text-gray-700">
+      <div className="flex gap-4 items-center font-semibold text-gray-700 hidden xl:flex">
           <div className='cursor-pointer hover:text-amber-700'><a href='/'>HOME</a></div>
         <div className='cursor-pointer hover:text-amber-700'>MEN</div>
           <div className='cursor-pointer hover:text-amber-700'>WOMEN</div>
@@ -41,6 +41,7 @@ const Navbar = () => {
           className="h-10 w-10 rounded-full object-cover"
         />
         <span className="text-gray-700 font-medium">monawwar</span>
+        <div className='xl:hidden'><i className="fa-solid fa-bars "></i></div>
       </div>
     </nav>
   )
