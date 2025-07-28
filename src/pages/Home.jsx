@@ -16,7 +16,7 @@ const Home = () => {
       {/* <Card2/>       */}
       {/* <ImageGallery/> */}
       {/* <HerpPage/> */}
-        <SaleBanner/>
+        {/* <SaleBanner/> */}
       <Meesho/>
       {/* <Meesho2 /> */}
       <OriginalBrands/>
