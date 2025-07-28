@@ -14,9 +14,8 @@ const categories = [
 
 const CategoryNavigation = () => {
   return (
-    <div className=" flex flex-col justify-center items-center w-screen h-screen py-8 bg-white shadow-md rounded-lg" >
-      
-        <div className=" flex gap-4 items-center w-[90%] bg-pink-100 justify-center rounded-l" >
+    <div className="flex flex-col justify-center items-center w-screen h-[350px] py-8 bg-white shadow-md rounded-lg">
+      <div className="flex gap-4 items-center w-[100%] bg-pink-100 justify-center rounded-l mt-4 mb-8">
           <div className="styles__FeatureItem-sc-2pt7ax-5 kwIMZc flex items-center gap-2">
             <img src="https://www.meesho.com/assets/Icons/returns.svg" className="styles__FeatureIcon-sc-2pt7ax-6 kzhBoo" />
             <span className="styles__FeatureText-sc-2pt7ax-7 bXOsoB">7 Days Easy Return</span>
@@ -34,7 +33,7 @@ const CategoryNavigation = () => {
 
         </div>
      
-      <div className="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-8 gap-6 lg:gap-8">
+      <div className="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-8 gap-6 lg:gap-8 mt-3  mb-4">
         {categories.map((category) => (
           <div key={category.name} className="flex flex-col items-center cursor-pointer hover:-translate-y-1 transition-transform duration-200">
             <div className="w-[150px] h-[150px] rounded-full  flex items-center justify-center mb-2 shadow-sm">

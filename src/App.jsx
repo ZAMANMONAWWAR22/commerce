@@ -6,6 +6,8 @@ import Navbar from './component/Navbar'
 import { Routes,Route } from 'react-router-dom'
 import Kids from './pages/Kids'
 import Home from './pages/Home'
+import Shop from './pages/Shop'
+import ProductPage from './pages/ProductPage'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -15,7 +17,9 @@ function App() {
     <Navbar/>
     <Routes>
        <Route path='/' element={<Home/>} />
-      <Route path='/kids' element={<Kids/>} />    
+      <Route path='/kids' element={<Kids/>} />   
+       <Route path='/shop' element={<Shop/>} />  
+        <Route path='/product/:id' element={<ProductPage/>} />  
     </Routes>     
     </>
   )

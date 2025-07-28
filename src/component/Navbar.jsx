@@ -5,7 +5,7 @@ import React from 'react'
 const Navbar = () => {
     const [search, setSearch] = useState('');
   return (
-     <nav className="bg-blue-100 px-6 py-4 flex items-center justify-between w-full">
+     <nav className="bg-blue-100 px-6 py-4 flex items-center justify-between w-full z-50">
       {/* Logo */}
       <div className="flex items-center gap-2">
         <img src="https://static.vecteezy.com/system/resources/previews/023/654/784/non_2x/golden-logo-template-free-png.png" alt="Logo" className="h-10 w-10" />
@@ -31,6 +31,7 @@ const Navbar = () => {
             
                 <div className='cursor-pointer hover:text-amber-700'>BEAUTY</div>
                   <div className='cursor-pointer hover:text-amber-700'>GENZ</div>
+                  <div className='cursor-pointer hover:text-amber-700'><a href='/shop'>SHOP</a></div>
       </div>
 
       {/* User Info */}
