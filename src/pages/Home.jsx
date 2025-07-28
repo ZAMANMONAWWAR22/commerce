@@ -1,11 +1,14 @@
 import React from 'react'
-import Card from '../component/Card'
-import Card2 from '../component/card2'
-import ImageGallery from '../imagegallary/ImageGallery'
-import HerpPage from '../component/HerpPage'
-import Meesho from '../component/Meesho'
-import Meesho2 from '../component/Meesho2'
+import StylePopularBrand from '../component/StylePopularBrand'
 import SaleBanner from '../component/SaleBanner'
+<<<<<<< HEAD
+
+const Home = () => {
+  return (
+    <div className='text-9xl text-gray-700'>
+    <SaleBanner />
+    <StylePopularBrand />
+=======
 import OriginalBrands from '../component/OriginalBrands'
 import OriginalBrands2 from '../component/OriginalBrands2'
 import Card3 from '../component/card3'
@@ -24,6 +27,7 @@ const Home = () => {
       {/* <Card3/> */}
     
 
+>>>>>>> dec1f9e2191061e80df148bfb84561d6b9554439
     </div>
   )
 }

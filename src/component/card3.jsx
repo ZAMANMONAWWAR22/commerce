@@ -10,7 +10,7 @@ const Card3 = () => {
         <p className="text-sm text-gray-600 mt-1"> Monday, February 9, 2026</p>
         <p className="text-sm text-gray-600">6:00 PM - 10:00 PM</p>
         <p className="text-sm text-gray-600 mt-1">Venue: 123 Celebration Avenue, City</p>
-      </div>
+      </div>hello
       <p className="text-gray-600 mb-6">We hope you can join us for an evening of fun, food, and festivities!</p>
       <button className="mt-2 px-6 py-2 bg-purple-600 text-white font-semibold rounded-full shadow hover:bg-purple-700 transition">RSVP Now</button>
     </div>
