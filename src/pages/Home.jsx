@@ -5,7 +5,7 @@ import Meesho2 from '../component/Meesho2';
 import Meesho from '../component/Meesho';
 import OriginalBrands from '../component/OriginalBrands';
 import OriginalBrands2 from '../component/OriginalBrands2';
-import Small from '../component/Small';
+import GoldBanner from '../component/GoldBanner';
 
 
 const Home = () => {
@@ -14,6 +14,7 @@ const Home = () => {
   
     <SaleBanner />
       <Meesho />
+      <GoldBanner />
       <OriginalBrands />
       <OriginalBrands2 />
       <StylePopularBrand />

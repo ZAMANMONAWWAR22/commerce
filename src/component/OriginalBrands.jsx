@@ -26,13 +26,13 @@ const OriginalBrands = () => {
   };
 
   return (
-    <div className="w-full hidden lg:flex justify-center bg-white">
-      <div className="relative p-4 w-[95%] mx-auto">
-        <div className="flex justify-between items-center mb-5 mt-5">
-          <h2 className="text-lg font-semibold">Original Brands ✔ </h2>
-          <a href="#" className="hidden md:flex items-center gap-1 text-purple-600 text-sm ">
-            View All
-            <svg width="16" height="16" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7"/></svg>
+    <div className="w-full hidden lg:flex justify-center bg-white ">
+      <div className="relative p-4 w-[95%] mx-auto mb-5">
+        <div className="flex justify-between items-center mb-5 mt-15">
+          <h2 className="text-4xl  ml-6 mb-3">Original Brands ✔</h2>
+          <a href="#" className="hidden md:flex items-center gap-1 text-purple-600 text-2xl ">
+            VIEW ALL
+            <svg width="25" height="25" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7"/></svg>
           </a>
         </div>
 
