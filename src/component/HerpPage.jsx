@@ -6,4 +6,4 @@ const HerpPage = () => {
   )
 }
 
-export default HerpPage
+export default HeroPage

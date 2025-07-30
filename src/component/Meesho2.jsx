@@ -3,11 +3,11 @@ import React from 'react';
 
 const Banner = () => {
   return (
-    <div className="relative w-full h-[300px] md:h-[400px] bg-gradient-to-r from-[#5a2e8c] to-[#9a4dce] overflow-hidden">
+    <div className="relative w-full h-[520px] md:h-[520px] bg-gradient-to-r from-[#3b82f6] to-[#f472b6] overflow-hidden">
       {/* Left Section - Sale Info */}
       <div className="absolute top-0 left-0 w-1/2 h-full flex items-center justify-center p-4">
         {/* Background Circle/Shape */}
-        <div className="absolute inset-0 bg-gradient-to-br from-orange-400 to-yellow-500 rounded-full scale-125 opacity-70"></div>
+        <div className="absolute inset-0 bg-gradient-to-br from-[#60a5fa] to-[#a5b4fc] scale-125 opacity-70"></div>
         {/* Content */}
         <div className="relative text-white text-center z-10">
           {/* Mobile Icon */}
@@ -31,8 +31,8 @@ const Banner = () => {
       {/* Right Section - Smart Shopping */}
       <div className="absolute top-0 right-0 w-1/2 h-full flex items-center justify-center p-4">
         {/* Background Visuals - abstract shapes/gradients */}
-        <div className="absolute inset-0 bg-gradient-to-bl from-[#7c3aed] to-[#d661ea] opacity-80"></div>
-        <div className="absolute inset-0 bg-gradient-to-tl from-[#e0c4f8] to-transparent opacity-30 rounded-full scale-150 animate-pulse"></div>
+        <div className="absolute inset-0 bg-gradient-to-bl from-[#f472b6] to-[#a21caf] opacity-80"></div>
+        <div className="absolute inset-0 bg-gradient-to-tl from-[#fbcfe8] to-transparent opacity-30 scale-150 animate-pulse"></div>
 
         <div className="relative text-white text-center z-10">
           <p className="text-4xl md:text-6xl font-extrabold text-[#7efffc] drop-shadow-lg">

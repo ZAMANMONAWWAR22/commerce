@@ -13,12 +13,12 @@ const brandImages = [
 
 const StylePopularBrand = () => {
   return (
-    <div className="w-full bg-white py-4 overflow-hidden">
-      <div className="relative w-full">
-        <div className="marquee-track flex gap-6">
+    <div className="w-full bg-[#ddcff6] py-4 overflow-hidden">
+      <div className="relative w-full h-[135px] flex items-center">
+        <div className="marquee-track flex gap-6 items-center">
           {[...brandImages, ...brandImages].map((src, idx) => (
-            <div key={idx} className="flex-shrink-0 w-24 h-24 bg-white rounded-lg shadow p-2 flex items-center justify-center">
-              <img src={src} alt="Popular Brands" className="w-full h-full object-contain" />
+            <div key={idx} className="flex-shrink-0 w-60 h-30 bg-white shadow p-2 flex items-center justify-center rounded-lg">
+              <img src={src} alt="Popular Brands" className="w-full h-[90%] object-contain" />
             </div>
           ))}
         </div>
