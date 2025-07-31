@@ -1,24 +1,44 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect, use } from 'react'
 import Dropdown from '../component/Dropdown';
 
 const Shop = () => {
   const [data, setData] = useState([]);
-
+  const [selectedCategory, setSelectedCategory] = useState('Select an option');
+const [loader, setLoader] = useState(true);
   useEffect(() => {
     fetch('https://dummyjson.com/products')
       .then(res => res.json())
       .then(data => {
+        setLoader(false);
         console.log(data);
         setData(data.products);
       });
   }, []);
 
+
+useEffect(() => {    
+  if (selectedCategory !== 'Select an option') {
+      fetch(`https://dummyjson.com/products/category/${selectedCategory}`)
+        .then(res => res.json())
+        .then(data => {
+          setData(data.products);
+        });
+    } else {
+      fetch('https://dummyjson.com/products')
+        .then(res => res.json())
+        .then(data => {
+          setData(data.products);
+        });
+    }
+},[selectedCategory]);
+
   return (
     <>
       <div className='text-2xl font-bold m-5 ml-10'>Products For You</div>
+      {loader && <div className='text-2xl font-bold m-5 ml-10'>Loading...</div>}
       <div className='flex flex-row items-start justify-center bg-blue-600 h-full w-[95%] m-auto'>
                <div className='flex-1 h-full bg-white flex flex-col items-start justify-start'>
-        <Dropdown/>
+        <Dropdown setSelectedCategory={setSelectedCategory} />
         
         </div>
         <div className='flex-3 h-full bg-white justify-center items-center flex flex-wrap gap-4 p-4'>
