@@ -1,6 +1,6 @@
 import React, { useState, useRef, useEffect } from 'react';
 
-const Dropdown = () => {
+const Dropdown = ({setSelectedCategory}) => {
   const [isOpen, setIsOpen] = useState(false);
   const [selectedOption, setSelectedOption] = useState('Select an option');
   const dropdownRef = useRef(null);
@@ -12,12 +12,10 @@ const Dropdown = () => {
     'groceries',   
   ];
 
-
-
-
-  const handleSelect = (option) => {
+  const handleSelect = (option) => {    
     setSelectedOption(option);
     setIsOpen(false);
+    setSelectedCategory(option);
   };
 
   const handleClickOutside = (event) => {
